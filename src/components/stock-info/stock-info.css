@@ -1,0 +1,10 @@
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #666;
+}
+.stock-count,
+.min-order {
+    display: inline-block;
+}

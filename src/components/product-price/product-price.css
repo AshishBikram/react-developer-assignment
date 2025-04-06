@@ -1,0 +1,28 @@
+
+.price-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.original-price {
+    font-size: 11px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #e53935;
+}
+
+.discount-badge {
+    background-color: #ffebee;
+    color: #e53935;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+}

@@ -1,0 +1,9 @@
+.category-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-bottom: 6px;
+}

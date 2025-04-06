@@ -1,0 +1,16 @@
+.product-not-selected-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.product-not-selected-container h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
