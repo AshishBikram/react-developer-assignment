@@ -37,12 +37,17 @@
     flex-direction: column;
     gap: 6px;
 }
-
+.product-image-wrapper {
+    width: 50%;
+}
 
 @media (max-width: 480px) {
     .product-card {
         flex-direction: column;
         height: auto;
+    }
+    .product-image-wrapper{
+        width: 100%;
     }
 
     .thumbnail-container {

@@ -7,7 +7,7 @@ const App = () => {
 
     return (
         <Router>
-            <div style={{ display: 'flex', height: '100vh' }} className={"product-list-container"}>
+            <div className={"product-list-container"}>
                 {/* Left side: Product details (or placeholder) */}
                 <div style={{ flex: 1, overflowY: 'auto' }}>
                     <Routes>
@@ -17,13 +17,7 @@ const App = () => {
                 </div>
 
 
-                <div
-                    style={{
-                    width: '400px',
-                    borderLeft: '1px solid #ccc',
-                    overflowY: 'auto',
-                    padding: '20px',
-                }}>
+                <div className="product-list-wrapper">
                         <ProductList />
                 </div>
             </div>

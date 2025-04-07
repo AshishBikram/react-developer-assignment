@@ -14,8 +14,9 @@ type ProductItemProps = {
 export function ProductItem({ product }: ProductItemProps) {
     return (
         <Link className="product-card" to={`/product/${product.id}`}>
-
-            <ImageViewer imageUrl={product.thumbnail} title={product.title} availabilityStatus={product.availabilityStatus} />
+            <div className="product-image-wrapper">
+                <ImageViewer imageUrl={product.thumbnail} title={product.title} availabilityStatus={product.availabilityStatus} />
+            </div>
             <div className="product-info">
                 <div className="product-header">
                     <CategoryBadge category={product.category} />
