@@ -1,0 +1,6 @@
+.product-list-wrapper{
+    width: 400px;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 20px;
+}

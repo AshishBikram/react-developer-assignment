@@ -1,0 +1,19 @@
+.product-specifications-wrapper{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.product-specifications-title{
+    margin: 0 0 10px 0;
+}
+.product-specifications-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .product-specifications-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

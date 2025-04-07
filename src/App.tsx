@@ -1,14 +1,13 @@
-import React, {Suspense} from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, useParams, useLocation} from 'react-router-dom';
 import ProductList from './components/product-list/ProductList';
 import ProductDetails from './components/product-details/ProductDetails';
-import Loader from "./components/loader/Loader";
 import ProductNotSelected from "./components/product-not-selected/ProductNotSelected";
 
-const App: React.FC = () => {
+const App = () => {
+
     return (
         <Router>
-            <div style={{ display: 'flex', height: '100vh' }}>
+            <div style={{ display: 'flex', height: '100vh' }} className={"product-list-container"}>
                 {/* Left side: Product details (or placeholder) */}
                 <div style={{ flex: 1, overflowY: 'auto' }}>
                     <Routes>
@@ -17,11 +16,15 @@ const App: React.FC = () => {
                     </Routes>
                 </div>
 
-                {/* Right side: Product list */}
-                <div style={{ width: '400px', borderLeft: '1px solid #ccc', overflowY: 'auto', padding: '20px' }}>
-                    <Suspense fallback={<Loader />}>
+
+                <div
+                    style={{
+                    width: '400px',
+                    borderLeft: '1px solid #ccc',
+                    overflowY: 'auto',
+                    padding: '20px',
+                }}>
                         <ProductList />
-                    </Suspense>
                 </div>
             </div>
         </Router>

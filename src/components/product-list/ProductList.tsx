@@ -3,11 +3,11 @@ import {getAllProducts} from "../../api/product.api";
 import {Suspense} from "react";
 import Loader from "../loader/Loader";
 
-const ProductList: React.FC = () => {
+const ProductList= () => {
   const productResponse = getAllProducts()
   return (
-    <div className={"product-list-wrapper"}>
-      <h1 className={"title"}>
+    <div>
+      <h1>
         Product List
       </h1>
       <Suspense fallback={<Loader />}>

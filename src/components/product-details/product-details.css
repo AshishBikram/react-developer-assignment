@@ -1,0 +1,30 @@
+.product-details{
+
+}
+.product-details h2{
+    text-align: center;
+    margin-left: 10px;
+}
+.product-details-header-wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+
+.back-btn{
+    display: none;
+    text-decoration: none;
+}
+.back-btn:hover{
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    .product-details-header-wrapper{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .back-btn{
+        display: block;
+    }
+}

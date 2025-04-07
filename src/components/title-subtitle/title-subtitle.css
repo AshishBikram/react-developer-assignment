@@ -1,0 +1,14 @@
+.title-sub-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title-wrap{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.title-sub-wrap{
+    font-size: 14px;
+    font-weight: normal;
+}

@@ -6,6 +6,7 @@ import CategoryBadge from "../category-badge/CategoryBadge";
 import BrandTitle from "../brand-title/BrandTitle";
 import StockInfo from "../stock-info/StockInfo";
 import {Link} from "react-router-dom";
+import ImageViewer from "../image-viewer/ImageViewer";
 
 type ProductItemProps = {
     product:  Product
@@ -13,16 +14,8 @@ type ProductItemProps = {
 export function ProductItem({ product }: ProductItemProps) {
     return (
         <Link className="product-card" to={`/product/${product.id}`}>
-            <div className="thumbnail-container">
-                <img
-                    src={product.thumbnail || "/placeholder.svg"}
-                    alt={product.title}
-                    width={200}
-                    height={200}
-                    className="product-thumbnail"
-                />
-            </div>
 
+            <ImageViewer imageUrl={product.thumbnail} title={product.title} availabilityStatus={product.availabilityStatus} />
             <div className="product-info">
                 <div className="product-header">
                     <CategoryBadge category={product.category} />

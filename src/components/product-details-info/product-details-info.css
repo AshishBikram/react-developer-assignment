@@ -1,0 +1,28 @@
+.product-details-info-wrapper{
+    width: 100%;
+}
+.product-details-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.product-details-info-container h1{
+    margin: 0;
+}
+.product-category-container{
+    display: flex;
+    gap: 5px;
+}
+.product-details-btn{
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #c62828;
+    border: none;
+    cursor: pointer;
+}
+.product-details-btn:hover{
+    background-color: #5a1212;
+}

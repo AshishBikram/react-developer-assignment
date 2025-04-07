@@ -1,0 +1,22 @@
+.product-details-item-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.product-details-item-container{
+    width: 80%;
+}
+
+.product-details-item-header{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .product-details-item-header{
+        flex-direction: column;
+    }
+}

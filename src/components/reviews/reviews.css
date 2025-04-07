@@ -1,0 +1,15 @@
+.reviews-wrapper{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.reviews-title{
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+

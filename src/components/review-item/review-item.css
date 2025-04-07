@@ -1,0 +1,30 @@
+.review-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.review-item-container{
+    display: flex;
+    flex-direction: column;
+}
+.review-item-user-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.review-item-user-info-name{
+    font-weight: bold;
+    font-size: 14px;
+}
+.review-item-comment{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.review-item-date{
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .review-item-wrapper{
+        flex-direction: column;
+    }
+}

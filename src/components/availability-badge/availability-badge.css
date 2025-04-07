@@ -1,0 +1,16 @@
+.availability-badge{
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    z-index: 1;
+}
+.in-stock {
+    background-color: #e6f7e6;
+    color: #2e7d32;
+}
+
+.low-stock {
+    background-color: #ffebee;
+    color: #c62828;
+}
